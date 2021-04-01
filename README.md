@@ -1,6 +1,6 @@
 サンプルで、[abc74](https://atcoder.jp/contests/abc074/tasks)回のA, B問題を解いています。
 
-## 問題を解く
+## 問題を提出する
 
 - Main.elmで`solveN`関数を作る
 - `main`の`Platform.worker`のinitの中のsolveNを上記で作った関数に差し替える。
