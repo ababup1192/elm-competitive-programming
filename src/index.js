@@ -1,5 +1,8 @@
 import { Elm } from './Main.elm'
+import * as fs from 'fs';
 
-Elm.Main.init({flags: null});
+const inputs = fs.readFileSync("/dev/stdin", "utf8")
 
-console.log('hello');
+const app = Elm.Main.init({flags: inputs.trim().split('\n')});
+
+app.ports.submit.subscribe(res => { console.log(res); });

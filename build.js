@@ -6,6 +6,7 @@ esbuild.build({
     bundle: true,
     outfile: 'dist/bundle.js',
     minify: true,
+    platform: 'node',
     plugins: [
       ElmPlugin({debug: false, optimize: true, pathToElm: null}) // options are documented below
     ],
